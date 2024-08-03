@@ -1,0 +1,109 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+
+body {
+    background-color: $roxo;
+}
+
+main {
+    @include flex(center, center);
+    border-radius: 15px;
+    border: 1.5px solid $azulgelo;
+    overflow: hidden;
+    width: 30%;
+    height: 50%;
+    background-color: white;
+    z-index: 1;
+}
+
+img {
+    position: absolute;
+    width: 180px;
+    top: 82px;
+}
+
+section input {
+    border: 1px solid;
+    border-radius: 0.7rem;
+    padding: 1rem 0.7rem;
+    height: 3.3rem;
+    width: 100%;
+    outline: none;
+    border: 1.5px solid $azulgelo;
+
+    &::placeholder {
+        font-family: $ParagFont;
+        font-size: 12px;
+    }
+}
+
+section {
+    @include flex(center, center);
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    h1 {
+        font-family: $ParagFont;
+        @extend a;
+        font-size: 30px;
+        margin-bottom: 1.5rem;
+        max-width: 100%;
+        font-weight: 800;
+    }
+
+    h2 {
+        font-family: $ParagFont;
+        font-size: clamp(1.9rem, 2vw, 2.4rem);
+        align-self: flex-start;
+        padding: 0px clamp(3rem, 6vw, 7rem);
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+.login-inputs {
+
+    padding: 20px 20px;
+    position: relative;
+    width: 100%;
+
+    .error-message {
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    .register-link {
+        position: absolute;
+        bottom: 0;
+        margin: 0px clamp(1rem, 2vw, 1rem) 2.5rem clamp(1rem, 2vw, 1rem);
+        font-size: 10px;
+        font-weight: 500;
+        font-family: $ParagFont;
+    }
+}
+
+a {
+    color: $azulgelo;
+}
+
+form {
+    width: 100%;
+    padding: 10px 40px;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    @include flex (center, center);
+    margin-top: 0.5rem;
+    cursor: pointer;
+    background-color: $azulgelo;
+    font-family: $ParagFont;
+    margin-bottom: 20px;
+}

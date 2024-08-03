@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playpen+Sans:wght@100..800&display=swap");
+body {
+  background-color: #e6eeff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1.5px solid #ACD4EB;
+  overflow: hidden;
+  width: 30%;
+  height: 50%;
+  background-color: white;
+  z-index: 1;
+}
+
+img {
+  position: absolute;
+  width: 180px;
+  top: 82px;
+}
+
+section input {
+  border: 1px solid;
+  border-radius: 0.7rem;
+  padding: 1rem 0.7rem;
+  height: 3.3rem;
+  width: 100%;
+  outline: none;
+  border: 1.5px solid #ACD4EB;
+}
+section input::-moz-placeholder {
+  font-family: "Playpen Sans", cursive;
+  font-size: 12px;
+}
+section input::placeholder {
+  font-family: "Playpen Sans", cursive;
+  font-size: 12px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+section h1 {
+  font-family: "Playpen Sans", cursive;
+  font-size: 30px;
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+  font-weight: 800;
+}
+section h2 {
+  font-family: "Playpen Sans", cursive;
+  font-size: clamp(1.9rem, 2vw, 2.4rem);
+  align-self: flex-start;
+  padding: 0px clamp(3rem, 6vw, 7rem);
+  margin-bottom: 0.5rem;
+}
+
+.login-inputs {
+  padding: 20px 20px;
+  position: relative;
+  width: 100%;
+}
+.login-inputs .error-message {
+  width: 100%;
+  height: 1.5rem;
+}
+.login-inputs .register-link {
+  position: absolute;
+  bottom: 0;
+  margin: 0px clamp(1rem, 2vw, 1rem) 2.5rem clamp(1rem, 2vw, 1rem);
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Playpen Sans", cursive;
+}
+
+a, section h1 {
+  color: #ACD4EB;
+}
+
+form {
+  width: 100%;
+  padding: 10px 40px;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  background-color: #ACD4EB;
+  font-family: "Playpen Sans", cursive;
+  margin-bottom: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */
